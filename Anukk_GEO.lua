@@ -12,6 +12,7 @@ function get_sets()
     -- VARIABLES --
     auto_action = 'Off'
 	geo_mode = 'Fury'	
+	blaze = 'Off'
 	
 	windower.register_event('tp change', function(new, old)
         if new > 349
@@ -57,13 +58,13 @@ function get_sets()
     sets.precast.WS = {ammo="Amar cluster",
         head="Merlinic hood",neck="Fotia gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
         body="Hagondes Coat +1",hands="Amalric gages",ring1="Rajas Ring",ring2="Rufescent Ring",
-        back="Rancorous Mantle",waist="Fotia Belt",legs="Amalric slops",feet="Battlecast Gaiters"}
+        back="Rancorous Mantle",waist="Fotia Belt",legs="Merlinic shalwar",feet="Battlecast Gaiters"}
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    sets.precast.WS['Flash Nova'] = {ammo="Witchstone",
-        head="Merlinic hood",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Barkarole Earring",
+    sets.precast.WS['Flash Nova'] = {ammo="Ghastly Tathlum",
+        head="Merlinic hood",neck="Incanter's torque",ear1="Friomisi Earring",ear2="Barkarole Earring",
         body="Amalric doublet",hands="Amalric gages",ring1="Acumen Ring",ring2="Etana ring",
-        back="Toro Cape",waist="Fotia Belt", legs="Amalric slops", feet="Merlinic Crackows"}
+        back="Toro Cape",waist="Fotia Belt", legs="Merlinic shalwar", feet="Merlinic Crackows"}
 
     sets.precast.WS['Starlight'] = {ear2="Moonshade Earring"}
 
@@ -81,16 +82,17 @@ function get_sets()
         body="Vrikodara Jupon",hands="Geomancy Mitaines +1",ring1="Prolix Ring",
         back="Lifestream Cape",waist="Witful Belt",legs="Geomancy Pants",feet="Merlinic Crackows"}
 
-    sets.midcast.Geomancy = {main="Rubicundity", sub="Culminus", range="Dunna", 
+    sets.midcast.Geomancy = {main="Rubicundity", sub="Niobid Strap", range="Dunna", 
 		head="Azimuth Hood", body="Bagua Tunic", hands="Geomancy Mitaines +1", lear="Mendi. Earring", rear="Gifted earring", 
 		neck="Incanter's torque", rring="Renaye Ring", feet="Medium's sabots", back="Lifestream Cape"}
-    sets.midcast.Geomancy.Indi = {main="Rubicundity", sub="Culminus", range="Dunna", 
-		head="Azimuth Hood", body="Bagua Tunic", lear="Mendi. Earring", rear="Gifted earring", neck="Incanter's torque",
+		
+    sets.midcast.Geomancy.Indi = {main="Rubicundity", sub="Niobid Strap", range="Dunna", 
+		head="Azimuth Hood", body="Bagua Tunic", lear="Mendi. Earring", rear="Gifted earring", neck="Incanter's torque", rring="Renaye Ring",
 		legs="Bagua Pants", hands="Geomancy Mitaines +1", feet="Medium's sabots", back="Lifestream Cape"}
 
     sets.midcast.Cure = {main="Tamaxchi",sub="Sors Shield", lear="Novia Earring", rear="Mendicant's Earring",
-        head="Merlinic hood", body="Vrikodara Jupon",hands="Telchine Gloves", lring="Sirona's ring", rring="Lebeche ring",
-        waist="Ovate Rope", back="Cheviot Cape", legs="Assiduity Pants +1",feet="Medium's sabots"}
+        head="Vanya hood", body="Vrikodara Jupon",hands="Telchine Gloves", lring="Sirona's ring", rring="Lebeche ring",
+        waist="Ovate Rope", back="Lifestream Cape", legs="Assiduity Pants +1",feet="Medium's sabots"}
     
     sets.midcast.Curaga = sets.midcast.Cure
 
@@ -100,32 +102,32 @@ function get_sets()
 
     sets.midcast['Enhancing Magic'] = {
         head="Befouled Crown", neck="Incanter's torque", ear1="Etiolation Earring", ear2="Loquacious Earring",
-        body="Telchine Chasuble",hands="Amalric gages", lring="Etana ring", rring="Leviathan ring",
+        body="Telchine Chasuble",hands="Amalric gages", lring="Metamor. Ring +1", rring="Perception ring",
         back="Merciful Cape",waist="Refoccilation Stone",legs="Assiduity Pants +1", feet="Azimuth Gaiters +1"}
 
     sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash", neck="Stone gorget"})
     
-    sets.midcast['Enfeebling Magic'] = {main="Rubicundity", sub="Culminus", range="Dunna",
-				head="Befouled Crown", neck="Sanctity Necklace", rear="Lifestorm Earring", lear="Psystorm Earring",
-                body="Vanya Robe", hands="Amalric gages", lring="Etana ring", rring="Leviathan ring",
-                back="Lifestream Cape", waist="Ovate Rope", legs="Psycloth Lappas", feet="Bagua Sandals"}
+    sets.midcast['Enfeebling Magic'] = {main="Marin staff +1", sub="Niobid Strap", range="Aureole",
+				head="Befouled Crown", neck="Incanter's torque", rear="Barkarole Earring", lear="Psystorm Earring",
+                body="Vanya Robe", hands="Azimuth Gloves", lring="Metamor. Ring +1", rring="Perception ring",
+                back="Lifestream Cape", waist="Ovate Rope", legs="Psycloth Lappas", feet="Merlinic Crackows"}
     
-    sets.midcast['Elemental Magic'] = {main="Rubicundity", sub="Culminus", ammo="Witchstone",
-				head="Merlinic hood", neck="Sanctity Necklace", lear="Barkarole Earring", rear="Friomisi Earring",
-                body="Amalric doublet", hands="Amalric gages", lring="Acumen Ring", rring="Shiva Ring",
-                back="Toro Cape", waist="Refoccilation Stone", legs="Amalric slops", feet="Merlinic Crackows"}
+    sets.midcast['Elemental Magic'] = {main="Marin staff +1", sub="Niobid Strap", ammo="Ghastly Tathlum",
+				head="Merlinic hood", neck="Incanter's torque", lear="Barkarole Earring", rear="Friomisi Earring",
+                body="Amalric doublet", hands="Amalric gages", lring="Metamor. Ring +1", rring="Perception ring",
+                back="Toro Cape", waist="Refoccilation Stone", legs="Merlinic shalwar", feet="Merlinic Crackows"}
         
     sets.midcast.Impact = set_combine(sets.midcast['Elemental Magic'], {head=empty,body="Twilight Cloak"})
 
-    sets.midcast['Dark Magic'] = {main="Rubicundity", sub="Culminus", range="Dunna",
+    sets.midcast['Dark Magic'] = {main="Marin staff +1", sub="Niobid Strap", range="Dunna",
 				head="Bagua Galero", neck="Incanter's torque", rear="Lifestorm Earring", lear="Psystorm Earring",
-                body="Geomancy Tunic", hands="Amalric gages", lring="Acumen Ring", rring="Etana ring",
-                back="Lifestream Cape", waist="Cetl Belt", legs="Amalric slops", feet="Merlinic Crackows"}
+                body="Geomancy Tunic", hands="Amalric gages", lring="Metamor. Ring +1", rring="Perception ring",
+                back="Lifestream Cape", waist="Cetl Belt", legs="Merlinic shalwar", feet="Merlinic Crackows"}
 
-    sets.magic_burst = {main="Rubicundity", sub="Culminus", ammo="Witchstone",
+    sets.magic_burst = {main="Marin staff +1", sub="Niobid Strap", ammo="Ghastly Tathlum",
 				head="Merlinic hood", neck="Mizu. Kubikazari", lear="Barkarole Earring", rear="Friomisi Earring",
                 body="Amalric doublet", hands="Amalric gages", lring="Mujin Band", rring="Locus ring",
-                back="Seshaw cape", waist="Refoccilation Stone", legs="Amalric slops", feet="Merlinic Crackows"}
+                back="Seshaw cape", waist="Refoccilation Stone", legs="Merlinic shalwar", feet="Merlinic Crackows"}
 	
 				
 	sets.obi = {
@@ -145,32 +147,32 @@ function get_sets()
 
     -- Resting sets
     sets.resting = {main="Pluto's Staff", range="Dunna",
-				head="Azimuth Hood +1", neck="Sanctity Necklace", rear="Etiolation Earring", lear="Ethereal Earring",
+				head="Azimuth Hood +1", neck="Incanter's torque", rear="Etiolation Earring", lear="Ethereal Earring",
                 body="Amalric doublet", hands="Bagua Mitaines", lring="Paguroidea Ring", rring="Renaye Ring",
                 back="Toro Cape", waist="Refoccilation Stone", legs="Assiduity Pants +1", feet="Azimuth Gaiters +1"}
 
     -- Idle sets
 
     sets.idle = {main="Earth Staff", sub="Volos Strap", range="Dunna",
-        head="Vanya Hood",neck="Cloud Hairpin +1",ear1="Handler's Earring +1", ear2="Impregnable Earring",
-        body="Vanya Robe",hands="Geomancy Mitaines +1", lring="Paguroidea Ring", rring="Gelatinous Ring +1",
-        back="Cheviot Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Wayfarer Clogs"}
+        head="Vanya Hood",neck="Cloud Hairpin +1",ear1="Handler's Earring +1", ear2="Handler's Earring",
+        body="Vanya Robe",hands="Geomancy Mitaines +1", lring="Paguroidea Ring", rring="Renaye Ring",
+        back="Lifestream Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     sets.idle.PDT = {main="Earth Staff", sub="Volos Strap", range="Dunna",
-        head="Vanya Hood",neck="Cloud Hairpin +1",ear1="Handler's Earring +1", ear2="Impregnable Earring",
-        body="Vanya Robe",hands="Geomancy Mitaines +1", lring="Paguroidea Ring", rring="Gelatinous Ring +1",
-        back="Cheviot Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Wayfarer Clogs"}
+        head="Vanya Hood",neck="Cloud Hairpin +1",ear1="Handler's Earring +1", ear2="Handler's Earring",
+        body="Vanya Robe",hands="Geomancy Mitaines +1", lring="Paguroidea Ring", rring="Renaye Ring",
+        back="Lifestream Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     -- .Pet sets are for when Luopan is present.
 	sets.idle.Pet = {main="Earth Staff", sub="Volos Strap", range="Dunna",
-        head="Vanya Hood",neck="Cloud Hairpin +1",ear1="Handler's Earring +1", ear2="Impregnable Earring",
-        body="Vanya Robe",hands="Geomancy Mitaines +1", lring="Paguroidea Ring", rring="Gelatinous Ring +1",
-        back="Cheviot Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Wayfarer Clogs"}
+        head="Vanya Hood",neck="Cloud Hairpin +1",ear1="Handler's Earring +1", ear2="Handler's Earring",
+        body="Vanya Robe",hands="Geomancy Mitaines +1", lring="Paguroidea Ring", rring="Renaye Ring",
+        back="Lifestream Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
    
     sets.idle.PDT.Pet = {main="Earth Staff", sub="Volos Strap", range="Dunna",
-        head="Vanya Hood",neck="Cloud Hairpin +1",ear1="Handler's Earring +1", ear2="Impregnable Earring",
-        body="Vanya Robe",hands="Geomancy Mitaines +1", lring="Paguroidea Ring", rring="Gelatinous Ring +1",
-        back="Cheviot Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Wayfarer Clogs"}
+        head="Vanya Hood",neck="Cloud Hairpin +1",ear1="Handler's Earring +1", ear2="Handler's Earring",
+        body="Vanya Robe",hands="Geomancy Mitaines +1", lring="Paguroidea Ring", rring="Renaye Ring",
+        back="Lifestream Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     -- .Indi sets are for when an Indi-spell is active.
     --sets.idle.Indi = set_combine(sets.idle, {legs="Bagua Pants"})
@@ -178,15 +180,15 @@ function get_sets()
     --sets.idle.PDT.Indi = set_combine(sets.idle.PDT, {legs="Bagua Pants"})
     --sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {legs="Bagua Pants"})
 
-    sets.idle.Town = {main="Rubicundity", sub="Culminus", range="Dunna",
-        head="Befouled Crown",neck="Sanctity Necklace",rear="Etiolation Earring", lear="Handler's Earring +1",
+    sets.idle.Town = {main="Marin staff +1", sub="Niobid Strap", range="Dunna",
+        head="Befouled Crown",neck="Incanter's torque",rear="Etiolation Earring", lear="Handler's Earring +1",
         body="Amalric doublet",hands="Bagua Mitaines", lring="Paguroidea Ring", rring="Renaye Ring",
         back="Lifestream Cape",waist="Refoccilation Stone",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     sets.idle.Weak = {main="Earth Staff", sub="Volos Strap", range="Dunna",
-        head="Vanya Hood",neck="Cloud Hairpin +1",ear1="Handler's Earring +1", ear2="Impregnable Earring",
-        body="Vanya Robe",hands="Geomancy Mitaines +1", lring="Paguroidea Ring", rring="Gelatinous Ring +1",
-        back="Cheviot Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Wayfarer Clogs"}
+        head="Vanya Hood",neck="Cloud Hairpin +1",ear1="Handler's Earring +1", ear2="Handler's Earring",
+        body="Vanya Robe",hands="Geomancy Mitaines +1", lring="Paguroidea Ring", rring="Renaye Ring",
+        back="Lifestream Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     sets.Kiting = {feet="Herald's Gaiters"}
 
@@ -203,10 +205,10 @@ function get_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
 
     -- Normal melee group
-    sets.engaged = {main="Rubicundity", sub="Culminus", ammo="Amar cluster",
-        head="Merlinic hood",neck="Sanctity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Hagondes Coat +1",hands="Amalric gages",ring1="Rajas Ring",ring2="Mars's Ring",
-        back="Kayapa Cape",waist="Windbuffet Belt +1",legs="Amalric slops",feet="Battlecast Gaiters"}
+    sets.engaged = {main="Marin staff +1", sub="Volos Strap", range="Dunna",
+        head="Vanya Hood",neck="Cloud Hairpin +1",ear1="Handler's Earring +1", ear2="Handler's Earring",
+        body="Vanya Robe",hands="Geomancy Mitaines +1", lring="Paguroidea Ring", rring="Renaye Ring",
+        back="Lifestream Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 	
 	
 end
@@ -265,7 +267,8 @@ function job_setup()
 	
 	    -- VARIABLES --
     auto_action = 'Off'
-	geo_mode = 'Fury'	
+	geo_mode = 'Fury'
+	blaze = 'Off'
 	
 	windower.register_event('tp change', function(new, old)
         if new > 349
@@ -349,6 +352,15 @@ function self_command(str)
 		and check_recasts(s('Entrust')) then
 			windower.send_command('Entrust <me>;wait 1;Indi-Haste <p1>')				
 		end	
+
+	elseif str == 'blaze' then
+		if not check_buffs('silence', 'mute')
+		and player.mp > 379
+		and check_recasts(s('Radial Arcana'))
+		and check_recasts(s('Blaze of Glory'))
+		and check_recasts(s('Dematerialize')) then
+			blaze = 'On'
+		end	
 		
 	end
 end
@@ -376,54 +388,62 @@ function relaxed_play_mode()
                 and check_recasts(s('Stoneskin')) then
 				windower.send_command('Stoneskin')			
 								
-		--geo_mode: Fury
+		--Indi
 		elseif not check_buffs('Attack Boost')
                 and not check_buffs('silence', 'mute')
 				and geo_mode == 'Fury'
                 and check_recasts(s('Indi-Fury')) then
 				windower.send_command('Indi-Fury')
 			
-		elseif not pet.isvalid
-				and not check_buffs('silence', 'mute')
-				and check_recasts(s('Geo-Frailty'))
-				and player.mp > 305
-				and geo_mode == 'Fury' then
-				windower.send_command('wait 1;Geo-Frailty <bt>;wait 7;Dia2 <bt>')			
-		
-		--geo_mode: Attunement
 		elseif not check_buffs('Magic Evasion Boost')
                 and not check_buffs('silence', 'mute')
 				and geo_mode == 'Attunement'
                 and check_recasts(s('Indi-Attunement')) then
 				windower.send_command('Indi-Attunement')
 			
-		elseif not pet.isvalid
-		        and not check_buffs('silence', 'mute')
-				and check_recasts(s('Geo-Vex'))
-				and player.mp > 302
-				and geo_mode == 'Attunement' then
-				windower.send_command('wait 1;Geo-Vex <bt>;wait 7;Dia2 <bt>')
-
-		--geo_mode: Acumen
 		elseif not check_buffs('Magic Atk. Boost')
                 and not check_buffs('silence', 'mute')
 				and geo_mode == 'Acumen'
                 and check_recasts(s('Indi-Acumen')) then
 				windower.send_command('Indi-Acumen')
-			
+
+		--blaze of glory
+		elseif blaze == 'On'
+				and not check_buffs('silence', 'mute')
+				and check_recasts(s('Geo-Frailty'))
+				and player.mp > 305 
+				and check_recasts(s('Radial Arcana'))
+				and check_recasts(s('Blaze of Glory'))
+				and check_recasts(s('Dematerialize')) then
+					if geo_mode == 'Fury' then
+						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Frailty <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia2 <bt>')
+					elseif geo_mode == 'Attunement' then
+						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Vex <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia2 <bt>')
+					elseif geo_mode == 'Acumen' then
+						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Malaise <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia2 <bt>')
+					end
+					blaze = 'Off'
+		
+		--Geo
 		elseif not pet.isvalid
 				and not check_buffs('silence', 'mute')
-				and check_recasts(s('Geo-Malaise'))
-				and player.mp > 379
-				and geo_mode == 'Acumen' then
-				windower.send_command('wait 1;Geo-Malaise <bt>;wait 7;Dia2 <bt>')														
-			
+				and check_recasts(s('Geo-Frailty'))
+				and check_recasts(s('Geo-Vex'))
+				and check_recasts(s('Geo-Malaise')) then
+					if player.mp > 305	and geo_mode == 'Fury' then
+						windower.send_command('wait 1;Geo-Frailty <bt>;wait 7;Dia2 <bt>;wait 3;Distract <bt>')					
+					elseif player.mp > 302	and geo_mode == 'Attunement' then
+						windower.send_command('wait 1;Geo-Vex <bt>;wait 7;Dia2 <bt>;wait 3;Distract <bt>')
+					elseif player.mp > 379 and geo_mode == 'Acumen' then
+						windower.send_command('wait 1;Geo-Malaise <bt>;wait 7;Dia2 <bt>;wait 3;Distract <bt>')														
+					end
+
         end
     end
 end
 
 function relaxed_play_mode2()
-    -- Skillup Elemental/Enfeebling/Dark su Uraganites
+    -- Skillup Elemental/Enfeebling/Dark
     if not midaction() then
         if player.hpp < 70
                 and not check_buffs('silence', 'mute')
@@ -433,31 +453,28 @@ function relaxed_play_mode2()
 		elseif player.hpp > 90 
                 and player.mpp < 10
                 and check_recasts(s('Convert')) then
-				windower.send_command('Convert;wait 1;cure4 <me>')	
-     			
-		elseif not check_buffs('Refresh')
+				windower.send_command('Convert;wait 1;cure4 <me>')
+
+		elseif not check_buffs('Regen')
                 and not check_buffs('silence', 'mute')
-                and check_recasts(s('Refresh')) then
-				windower.send_command('Refresh <me>')
-			
+                and check_recasts(s('Indi-Regen')) then
+				windower.send_command('Indi-Regen')				
+     			
 		elseif not pet.isvalid
-		        and not check_buffs('silence', 'mute') then
-				windower.send_command('fire <bt>')
+                and not check_buffs('silence', 'mute')
+                and check_recasts(s('Geo-Refresh')) then
+				windower.send_command('Geo-Refresh <me>')
+			
+		elseif not check_buffs('silence', 'mute') then
+				--windower.send_command('fire <bt>')
 				--windower.send_command('dia <bt>')
-				--windower.send_command('bio <bt>')
-		
-	
-							
+				windower.send_command('bio <bt>')
+									
         end
     end
 end
 
-function relaxed_play_mode3()
-    -- Skillup Elemental/Enfeebling/Dark su Uraganites
-				windower.send_command('input /item "Silt Pouch" <me>;wait 2')
 
-end
-	
 -- Define sets and vars used by this job file.
 -------------------------------------------------------------------------------------------------------------------
 -- User code that supplements standard library decisions.
