@@ -131,7 +131,7 @@ function init_gear_sets()
     sets.midcast['Dark Magic'] = {main="Rubicundity", sub="Culminus", range="Aureole",
 				head="Merlinic hood", neck="Sanctity Necklace", rear="Lifestorm Earring", lear="Psystorm Earring",
                 body="Amalric doublet", hands="Amalric gages", lring="Acumen Ring", rring="Etana ring",
-                back="Swift Cape", waist="Kentarch Belt", legs="Amalric slops", feet="Merlinic Crackows"}
+                back="Swift Cape", waist="Kentarch Belt +1", legs="Amalric slops", feet="Merlinic Crackows"}
 
     --sets.midcast.Stun = set_combine(sets.midcast['Dark Magic'], {})
 
@@ -187,24 +187,24 @@ function init_gear_sets()
         back="Shadow Mantle",waist="Flume Belt",legs="Crimson Cuisses",feet="Battlecast Gaiters"}
 
     sets.idle.PDT = {main="Earth Staff", sub="Willpower Grip", ammo="Vanir Battery",
-				head="Vitivation Chapeau +1", neck="Twilight Torque", lear="Ethereal earring", rear="Etiolation Earring",
+				head="Vitivation Chapeau +1", neck="Loricate Torque", lear="Ethereal earring", rear="Etiolation Earring",
                 body="Emet Harness +1", hands="Despair Finger Gauntlets", rring="Defending Ring", lring="Gelatinous Ring +1",
                 back="Solemnity Cape", waist="Flume Belt", legs="Amalric slops", feet="Battlecast Gaiters"}	
 
     sets.idle.MDT = {main="Vampirism", sub="Beatific Shield +1", ammo="Vanir Battery",
-				head="Vitivation Chapeau +1", neck="Twilight Torque", lear="Ethereal earring", rear="Etiolation Earring",
+				head="Vitivation Chapeau +1", neck="Loricate Torque", lear="Ethereal earring", rear="Etiolation Earring",
                 body="Hagondes Coat +1", hands="Despair Finger Gauntlets", rring="Defending Ring", lring="Renaye Ring",
                 back="Solemnity Cape", waist="Flume Belt", legs="Amalric slops", feet="Battlecast Gaiters"}	
     
     
     -- Defense sets
     sets.defense.PDT = {main="Earth Staff", sub="Volos Strap", ammo="Vanir Battery",
-				head="Vitivation Chapeau +1", neck="Twilight Torque", lear="Ethereal earring", rear="Etiolation Earring",
+				head="Vitivation Chapeau +1", neck="Loricate Torque", lear="Ethereal earring", rear="Etiolation Earring",
                 body="Emet Harness +1", hands="Despair Finger Gauntlets", rring="Defending Ring", lring="Gelatinous Ring +1",
                 back="Solemnity Cape", waist="Slipor sash", legs="Amalric slops", feet="Battlecast Gaiters"}	
 
     sets.defense.MDT = {main="Vampirism", sub="Beatific Shield +1", ammo="Vanir Battery",
-				head="Vitivation Chapeau +1", neck="Twilight Torque", lear="Ethereal earring", rear="Etiolation Earring",
+				head="Vitivation Chapeau +1", neck="Loricate Torque", lear="Ethereal earring", rear="Etiolation Earring",
                 body="Hagondes Coat +1", hands="Despair Finger Gauntlets", rring="Defending Ring",
                 back="Solemnity Cape", waist="Slipor sash", legs="Amalric slops", feet="Battlecast Gaiters"}	
 
@@ -236,7 +236,7 @@ function init_gear_sets()
     sets.engaged.Defense = {ammo="Demonry Stone",
         head="Carmine mask",neck="Sanctity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
         body="Emet Harness +1",hands="Atrophy Gloves +1",ring1="Rajas Ring",ring2="Defending Ring",
-        back="Kayapa Cape",waist="Kentarch Belt",legs="Osmium Cuisses",feet="Battlecast Gaiters"}
+        back="Kayapa Cape",waist="Kentarch Belt +1",legs="Osmium Cuisses",feet="Battlecast Gaiters"}
 
 end
 	

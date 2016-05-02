@@ -122,7 +122,7 @@ function get_sets()
     sets.midcast['Dark Magic'] = {main="Marin staff +1", sub="Niobid Strap", range="Dunna",
 				head="Bagua Galero", neck="Incanter's torque", rear="Lifestorm Earring", lear="Psystorm Earring",
                 body="Geomancy Tunic", hands="Amalric gages", lring="Metamor. Ring +1", rring="Perception ring",
-                back="Lifestream Cape", waist="Cetl Belt", legs="Merlinic shalwar", feet="Merlinic Crackows"}
+                back="Lifestream Cape", waist="Ovate Rope", legs="Merlinic shalwar", feet="Merlinic Crackows"}
 
     sets.magic_burst = {main="Marin staff +1", sub="Niobid Strap", ammo="Ghastly Tathlum",
 				head="Merlinic hood", neck="Mizu. Kubikazari", lear="Barkarole Earring", rear="Friomisi Earring",
@@ -144,33 +144,33 @@ function get_sets()
     --------------------------------------
     -- Idle/resting/defense/etc sets
     --------------------------------------
-
+	
     -- Resting sets
     sets.resting = {main="Pluto's Staff", range="Dunna",
 				head="Azimuth Hood +1", neck="Incanter's torque", rear="Etiolation Earring", lear="Ethereal Earring",
                 body="Amalric doublet", hands="Bagua Mitaines", lring="Paguroidea Ring", rring="Renaye Ring",
                 back="Toro Cape", waist="Refoccilation Stone", legs="Assiduity Pants +1", feet="Azimuth Gaiters +1"}
-
+	
     -- Idle sets
 
     sets.idle = {main="Earth Staff", sub="Volos Strap", range="Dunna",
-        head="Vanya Hood",neck="Cloud Hairpin +1",ear1="Handler's Earring +1", ear2="Handler's Earring",
+        head="Vanya Hood",neck="Loricate Torque +1",ear1="Handler's Earring +1", ear2="Handler's Earring",
         body="Vanya Robe",hands="Geomancy Mitaines +1", lring="Paguroidea Ring", rring="Renaye Ring",
         back="Lifestream Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     sets.idle.PDT = {main="Earth Staff", sub="Volos Strap", range="Dunna",
-        head="Vanya Hood",neck="Cloud Hairpin +1",ear1="Handler's Earring +1", ear2="Handler's Earring",
+        head="Vanya Hood",neck="Loricate Torque +1",ear1="Handler's Earring +1", ear2="Handler's Earring",
         body="Vanya Robe",hands="Geomancy Mitaines +1", lring="Paguroidea Ring", rring="Renaye Ring",
         back="Lifestream Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     -- .Pet sets are for when Luopan is present.
 	sets.idle.Pet = {main="Earth Staff", sub="Volos Strap", range="Dunna",
-        head="Vanya Hood",neck="Cloud Hairpin +1",ear1="Handler's Earring +1", ear2="Handler's Earring",
+        head="Vanya Hood",neck="Loricate Torque +1",ear1="Handler's Earring +1", ear2="Handler's Earring",
         body="Vanya Robe",hands="Geomancy Mitaines +1", lring="Paguroidea Ring", rring="Renaye Ring",
         back="Lifestream Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
    
     sets.idle.PDT.Pet = {main="Earth Staff", sub="Volos Strap", range="Dunna",
-        head="Vanya Hood",neck="Cloud Hairpin +1",ear1="Handler's Earring +1", ear2="Handler's Earring",
+        head="Vanya Hood",neck="Loricate Torque +1",ear1="Handler's Earring +1", ear2="Handler's Earring",
         body="Vanya Robe",hands="Geomancy Mitaines +1", lring="Paguroidea Ring", rring="Renaye Ring",
         back="Lifestream Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
@@ -186,7 +186,7 @@ function get_sets()
         back="Lifestream Cape",waist="Refoccilation Stone",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     sets.idle.Weak = {main="Earth Staff", sub="Volos Strap", range="Dunna",
-        head="Vanya Hood",neck="Cloud Hairpin +1",ear1="Handler's Earring +1", ear2="Handler's Earring",
+        head="Vanya Hood",neck="Loricate Torque +1",ear1="Handler's Earring +1", ear2="Handler's Earring",
         body="Vanya Robe",hands="Geomancy Mitaines +1", lring="Paguroidea Ring", rring="Renaye Ring",
         back="Lifestream Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
@@ -206,7 +206,7 @@ function get_sets()
 
     -- Normal melee group
     sets.engaged = {main="Marin staff +1", sub="Volos Strap", range="Dunna",
-        head="Vanya Hood",neck="Cloud Hairpin +1",ear1="Handler's Earring +1", ear2="Handler's Earring",
+        head="Vanya Hood",neck="Loricate Torque +1",ear1="Handler's Earring +1", ear2="Handler's Earring",
         body="Vanya Robe",hands="Geomancy Mitaines +1", lring="Paguroidea Ring", rring="Renaye Ring",
         back="Lifestream Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 	
@@ -319,8 +319,12 @@ function self_command(str)
 			geo_mode = 'Attunement'
 		elseif geo_mode == 'Attunement' then
 			geo_mode = 'Acumen'
-		else
-			geo_mode = 'Fury'
+		elseif geo_mode == 'Acumen' then
+			geo_mode = 'Precision'
+		elseif geo_mode == 'Precision' then
+			geo_mode = 'Focus'
+		elseif geo_mode == 'Focus' then
+			geo_mode = 'Fury'			
 		end		
 		windower.add_to_chat(8,'Geo set mode: '..geo_mode)		
 		windower.send_command('input /tell Amunaptra Geo_mode: '..geo_mode)
@@ -382,12 +386,7 @@ function relaxed_play_mode()
                 and not check_buffs('silence', 'mute')
                 and check_recasts(s('Refresh')) then
 				windower.send_command('Refresh <me>')
-				
-        elseif not check_buffs('Stoneskin')
-                and not check_buffs('silence', 'mute')
-                and check_recasts(s('Stoneskin')) then
-				windower.send_command('Stoneskin')			
-								
+														
 		--Indi
 		elseif not check_buffs('Attack Boost')
                 and not check_buffs('silence', 'mute')
@@ -407,11 +406,23 @@ function relaxed_play_mode()
                 and check_recasts(s('Indi-Acumen')) then
 				windower.send_command('Indi-Acumen')
 
+		elseif not check_buffs('Accuracy Boost')
+                and not check_buffs('silence', 'mute')
+				and geo_mode == 'Precision'
+                and check_recasts(s('Indi-Precision')) then
+				windower.send_command('Indi-Precision')				
+
+		elseif not check_buffs('Magic Accuracy Boost')
+                and not check_buffs('silence', 'mute')
+				and geo_mode == 'Focus'
+                and check_recasts(s('Indi-Focus')) then
+				windower.send_command('Indi-Focus')	
+				
 		--blaze of glory
 		elseif blaze == 'On'
 				and not check_buffs('silence', 'mute')
 				and check_recasts(s('Geo-Frailty'))
-				and player.mp > 305 
+				and player.mp > 379 
 				and check_recasts(s('Radial Arcana'))
 				and check_recasts(s('Blaze of Glory'))
 				and check_recasts(s('Dematerialize')) then
@@ -421,6 +432,10 @@ function relaxed_play_mode()
 						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Vex <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia2 <bt>')
 					elseif geo_mode == 'Acumen' then
 						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Malaise <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia2 <bt>')
+					elseif geo_mode == 'Precision' then
+						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Torpor <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia2 <bt>')
+					elseif geo_mode == 'Focus' then
+						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Languor <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia2 <bt>')
 					end
 					blaze = 'Off'
 		
@@ -429,17 +444,36 @@ function relaxed_play_mode()
 				and not check_buffs('silence', 'mute')
 				and check_recasts(s('Geo-Frailty'))
 				and check_recasts(s('Geo-Vex'))
-				and check_recasts(s('Geo-Malaise')) then
+				and check_recasts(s('Geo-Malaise'))
+				and check_recasts(s('Geo-Torpor'))	then
 					if player.mp > 305	and geo_mode == 'Fury' then
 						windower.send_command('wait 1;Geo-Frailty <bt>;wait 7;Dia2 <bt>;wait 3;Distract <bt>')					
 					elseif player.mp > 302	and geo_mode == 'Attunement' then
 						windower.send_command('wait 1;Geo-Vex <bt>;wait 7;Dia2 <bt>;wait 3;Distract <bt>')
 					elseif player.mp > 379 and geo_mode == 'Acumen' then
-						windower.send_command('wait 1;Geo-Malaise <bt>;wait 7;Dia2 <bt>;wait 3;Distract <bt>')														
+						windower.send_command('wait 1;Geo-Malaise <bt>;wait 7;Dia2 <bt>;wait 3;Frazzle <bt>')	
+					elseif player.mp > 203 and geo_mode == 'Precision' then
+						windower.send_command('wait 1;Geo-Torpor <bt>;wait 7;Dia2 <bt>;wait 3;Distract <bt>')
+					elseif player.mp > 249 and geo_mode == 'Focus' then
+						windower.send_command('wait 1;Geo-Languor <bt>;wait 7;Dia2 <bt>;wait 3;Frazzle <bt>')						
 					end
-
-        end
-    end
+		
+		end
+	end
+	
+	if not midaction() then
+		if not check_buffs('Stoneskin')
+			and not check_buffs('silence', 'mute')
+			and check_recasts(s('Stoneskin')) then
+			windower.send_command('Stoneskin')	
+		end
+		--if not check_buffs('Phalanx')
+		--	and not check_buffs('silence', 'mute')
+		--	and check_recasts(s('Phalanx')) then
+		--	windower.send_command('Phalanx')	
+		--end		
+	end
+	
 end
 
 function relaxed_play_mode2()

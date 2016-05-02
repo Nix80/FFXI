@@ -52,7 +52,7 @@ function init_gear_sets()
 
     sets.precast.FC = {range="Dunna",
         head="Merlinic hood", ear1="Etiolation Earring", ear2="Loquacious Earring",
-        body="Vrikodara Jupon", ring1="Lebeche Ring", hands="Amalric gages",
+        body="Vrikodara Jupon", ring1="Lebeche Ring", ring2="Weatherspoon Ring", hands="Amalric gages",
         back="Lifestream Cape",waist="Cetl Belt",legs="Geomancy Pants +1",feet="Merlinic Crackows"}
 
     sets.precast.FC.Cure = set_combine(sets.precast.FC, {main="Tamaxchi",sub="Sors Shield",back="Pahtli Cape"})
@@ -114,7 +114,7 @@ function init_gear_sets()
     
     sets.midcast['Enfeebling Magic'] = {main="Rubicundity", sub="Culminus", range="Dunna",
 				head="Befouled Crown", neck="Sanctity Necklace", rear="Lifestorm Earring", lear="Psystorm Earring",
-                body="Vanya Robe", hands="Amalric gages", lring="Etana ring", rring="Leviathan ring",
+                body="Vanya Robe", hands="Amalric gages", lring="Etana ring", rring="Weatherspoon Ring",
                 back="Lifestream Cape", waist="Ovate Rope", legs="Psycloth Lappas", feet="Bagua Sandals"}
     
     sets.midcast['Elemental Magic'] = {main="Rubicundity", sub="Culminus", ammo="Witchstone",
@@ -161,7 +161,7 @@ function init_gear_sets()
 
     sets.idle = {main="Rubicundity", sub="Culminus", range="Dunna",
         head="Befouled Crown", neck="Sanctity Necklace", rear="Etiolation Earring", lear="Ethereal Earring",
-        body="Vrikodara Jupon",hands="Bagua Mitaines", lring="Defending Ring", rring="Renaye Ring",
+        body="Vrikodara Jupon",hands="Bagua Mitaines", lring="Defending Ring", rring="Gelatinous Ring +1",
         back="Solemnity Cape",waist="Refoccilation Stone",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     sets.idle.PDT = {main="Rubicundity", sub="Culminus",
@@ -172,11 +172,11 @@ function init_gear_sets()
     -- .Pet sets are for when Luopan is present.
 	sets.idle.Pet = {main="Rubicundity", sub="Culminus", range="Dunna",
         head="Azimuth Hood +1",neck="Sanctity Necklace", rear="Handler's Earring +1", lear="Etiolation Earring",
-        body="Amalric doublet",hands="Geomancy Mitaines +1",ring1="Defending Ring", rring="Renaye Ring",
+        body="Amalric doublet",hands="Geomancy Mitaines +1",ring1="Defending Ring", rring="Gelatinous Ring +1",
         back="Lifestream Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Azimuth Gaiters +1"}
    
     sets.idle.PDT.Pet = {main="Earth Staff", sub="Volos Strap", range="Dunna",
-        head="Azimuth Hood +1",neck="Twilight torque",ear1="Handler's Earring +1",ear2="Etiolation Earring",
+        head="Azimuth Hood +1",neck="Loricate Torque",ear1="Handler's Earring +1",ear2="Etiolation Earring",
         body="Hagondes Coat +1",hands="Geomancy Mitaines +1", lring="Defending Ring", rring="Gelatinous Ring +1",
         back="Lifestream Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Azimuth Gaiters +1"}
 
@@ -188,24 +188,24 @@ function init_gear_sets()
 
     sets.idle.Town = {main="Rubicundity", sub="Culminus", range="Dunna",
         head="Befouled Crown",neck="Sanctity Necklace",rear="Etiolation Earring", lear="Handler's Earring +1",
-        body="Amalric doublet",hands="Bagua Mitaines", lring="Defending Ring", rring="Renaye Ring",
+        body="Amalric doublet",hands="Bagua Mitaines", lring="Defending Ring", rring="Gelatinous Ring +1",
         back="Lifestream Cape",waist="Refoccilation Stone",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     sets.idle.Weak = {main="Rubicundity", sub="Culminus", 
         head="Befouled Crown",neck="Sanctity Necklace",rear="Etiolation Earring", lear="Barkarole Earring",
-        body="Amalric doublet",hands="Amalric gages", lring="Defending Ring", rring="Renaye Ring",
+        body="Amalric doublet",hands="Amalric gages", lring="Defending Ring", rring="Gelatinous Ring +1",
         back="Lifestream Cape",waist="Slipor sash",legs="Amalric slops",feet="Azimuth Gaiters +1"}
 
     -- Defense sets
 
     sets.defense.PDT = {main="Earth Staff", sub="Volos Strap", range="Dunna",
-        head="Befouled Crown",neck="Twilight torque",ear1="Handler's Earring +1", ear2="Etiolation Earring",
+        head="Befouled Crown",neck="Loricate Torque",ear1="Handler's Earring +1", ear2="Etiolation Earring",
         body="Hagondes Coat +1",hands="Geomancy Mitaines +1", lring="Defending Ring", rring="Gelatinous Ring +1",
         back="Solemnity Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Azimuth Gaiters +1"}
 
     sets.defense.MDT = {main="Earth Staff", sub="Volos Strap", range="Dunna",
-        head="Befouled Crown",neck="Twilight torque",ear1="Handler's Earring +1",ear2="Etiolation Earring",
-        body="Hagondes Coat +1",hands="Geomancy Mitaines +1", lring="Defending Ring", rring="Renaye Ring",
+        head="Befouled Crown",neck="Loricate Torque",ear1="Handler's Earring +1",ear2="Etiolation Earring",
+        body="Hagondes Coat +1",hands="Geomancy Mitaines +1", lring="Defending Ring", rring="Gelatinous Ring +1",
         back="Solemnity Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Azimuth Gaiters +1"}
 
     sets.Kiting = {feet="Herald's Gaiters"}

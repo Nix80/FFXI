@@ -92,7 +92,7 @@ function init_gear_sets()
         hands="Pillager's Armlets +1",
         ring1="Ramuh Ring +1",
         ring2="Rajas Ring",
-        back="Grounded Mantle +1",
+        back="Toutatis's Cape",
         waist="Chaac Belt",
         legs="Samnuha Tights",
         feet="Raider's Poulaines +2"
@@ -106,7 +106,7 @@ function init_gear_sets()
 		body="Dread Jupon",
         hands="Pillager's Armlets +1",
         ring2="Garuda Ring",
-		back="Canny Cape",
+		back="Toutatis's Cape",
         waist="Chaac Belt",
         legs="Adhemar Kecks",
         feet="Raider's Poulaines +2"
@@ -143,7 +143,7 @@ function init_gear_sets()
         ear1="Dudgeon Earring",
         ear2="Heartseeker Earring",
         hands=TaeonHands.TA,
-        back="Canny Cape",
+        back="Toutatis's Cape",
         ring1="Patricius Ring",
         ring2="Epona's Ring",
         waist="Chaac Belt",
@@ -199,7 +199,7 @@ function init_gear_sets()
         ring2="Ramuh Ring +1",
         ear1="Brutal Earring",
         ear2="Moonshade Earring",		
-		back="Canny Cape",
+		back="Toutatis's Cape",
         waist="Fotia Belt", 
         legs="Samnuha Tights",
         feet="Herculean Boots"
@@ -207,7 +207,7 @@ function init_gear_sets()
 	sets.precast.WS.Acc = set_combine(sets.precast.WS, {
         hands="Adhemar Wristbands",
         ring2="Patricius Ring",
-        back="Canny Cape",
+        back="Toutatis's Cape",
         waist="Olseni Belt"
     })
 
@@ -220,11 +220,11 @@ function init_gear_sets()
         ring1="Garuda Ring",
         legs="Samnuha Tights",
         waist="Fotia Belt",
-        back="Canny Cape"
+        back="Toutatis's Cape"
     })
 	sets.precast.WS['Exenterator'].Mid = set_combine(sets.precast.WS['Exenterator'], {waist="Thunder Belt"})
 	sets.precast.WS['Exenterator'].Acc = set_combine(sets.precast.WS['Exenterator'].Mid, {
-        back="Canny Cape"
+        back="Toutatis's Cape"
     })
 	sets.precast.WS['Exenterator'].SA = set_combine(sets.precast.WS['Exenterator'].Mid, {
         neck="Fotia Gorget", 
@@ -251,15 +251,15 @@ function init_gear_sets()
         ring1="Ramuh Ring +1",
         waist="Fotia Belt",
         legs="Samnuha Tights",
-        back="Rancorous Mantle",
+        back="Toutatis's Cape",
         feet="Thereoid Greaves"
     })
-	sets.precast.WS['Evisceration'].Mid = set_combine(sets.precast.WS['Evisceration'], {back="Canny Cape"})
+	sets.precast.WS['Evisceration'].Mid = set_combine(sets.precast.WS['Evisceration'], {back="Toutatis's Cape"})
 	sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS['Evisceration'], {
         hands="Adhemar Wristbands",
         ring1="Epona's Ring",
         ring2="Ramuh Ring +1",
-        back="Canny Cape",
+        back="Toutatis's Cape",
         waist="Olseni Belt"
     })
 	sets.precast.WS['Evisceration'].SA = set_combine(sets.precast.WS['Evisceration'].Mid, {neck="Shadow Gorget"})
@@ -276,14 +276,14 @@ function init_gear_sets()
         ear2="Moonshade Earring",		
         waist="Fotia Belt",
         legs="Samnuha Tights",
-        back="Rancorous Mantle",
+        back="Toutatis's Cape",
         feet="Thereoid Greaves"
     })
-	sets.precast.WS["Rudra's Storm"].Mid = set_combine(sets.precast.WS["Rudra's Storm"], {back="Canny Cape"})
+	sets.precast.WS["Rudra's Storm"].Mid = set_combine(sets.precast.WS["Rudra's Storm"], {back="Toutatis's Cape"})
 	sets.precast.WS["Rudra's Storm"].Acc = set_combine(sets.precast.WS["Rudra's Storm"], {
         ring1="Epona's Ring",
         ring2="Ramuh Ring +1",
-        back="Canny Cape",
+        back="Toutatis's Cape",
         waist="Olseni Belt"
     })
 	sets.precast.WS["Rudra's Storm"].SA = set_combine(sets.precast.WS["Rudra's Storm"].Mid, {neck="Aqua Gorget"})
@@ -350,7 +350,7 @@ function init_gear_sets()
 
 	sets.idle.Town = set_combine(sets.idle, {
         head="Lithelimb Cap",
-        back="Canny Cape",
+        back="Toutatis's Cape",
         neck="Sanctity Necklace",
         body="Councilor's Garb",
         hands="Leyline Gloves",
@@ -377,14 +377,14 @@ function init_gear_sets()
         hands="Adhemar Wristbands",
         ring1="Beeline Ring",
         ring2="Defending Ring",
-		back="Canny Cape",
+		back="Toutatis's Cape",
         legs="Samnuha Tights",
         feet="Herculean Boots"
     }
 
 	sets.defense.PDT = {
 		head="Iuitl Headgear +1",
-        neck="Twilight Torque",
+        neck="Loricate Torque",
 		body="Emet Harness +1",
         hands="Adhemar Wristbands",
         ring1="Gelatinous Ring +1",
@@ -396,7 +396,7 @@ function init_gear_sets()
 
 	sets.defense.MDT = {
 		head="Whirlpool Mask",
-        neck="Twilight Torque",
+        neck="Loricate Torque",
 		body="Adhemar Jacket",
         hands="Adhemar Wristbands",
         ring1="Dark Ring",
@@ -425,7 +425,7 @@ function init_gear_sets()
         hands="Adhemar Wristbands",
         ring1="Epona's ring",
         ring2="Petrov Ring",
-		back="Canny Cape",
+		back="Toutatis's Cape",
         waist="Windbuffet Belt +1",
         legs="Samnuha Tights",
         feet="Herculean Boots"
@@ -440,7 +440,7 @@ function init_gear_sets()
 		ear1="Steelflash Earring",
 		ear2="Bladeborn Earring",
         ring1="Patricius Ring",
-        waist="Kentarch Belt",
+        waist="Kentarch Belt +1",
         feet="Herculean Boots"
     })
 	sets.engaged.Evasion = set_combine(sets.engaged, {
@@ -456,7 +456,7 @@ function init_gear_sets()
     })
 	sets.engaged.PDT = set_combine(sets.engaged, {
 		head="Iuitl Headgear +1",
-        neck="Twilight Torque",
+        neck="Loricate Torque",
 		body="Emet Harness +1",
         ring1="Patricius Ring",
     	back="Solemnity Cape",
@@ -481,7 +481,7 @@ function init_gear_sets()
 		ear2="Bladeborn Earring",
         body="Adhemar Jacket",
         hands=TaeonHands.TA,
-        back="Canny Cape",
+        back="Toutatis's Cape",
         waist="Windbuffet Belt +1",
         legs="Samnuha Tights",
         feet="Herculean Boots"
@@ -500,12 +500,12 @@ function init_gear_sets()
         ring1="Petrov Ring",
         ring2="Patricius Ring",
         waist="Windbuffet Belt +1",
-        back="Grounded Mantle +1"
+        back="Toutatis's Cape"
     })
     sets.engaged.Evasion.Haste_43 = set_combine(sets.engaged.Haste_43, { body="Adhemar Jacket", ring1="Beeline Ring", feet="Herculean Boots"})
     sets.engaged.PDT.Haste_43 = set_combine(sets.engaged.Haste_43, {
 		    head="Iuitl Headgear +1",
-            neck="Twilight Torque", 
+            neck="Loricate Torque", 
             body="Adhemar Jacket", 
             ring1="Patricius Ring", 
             ring2="Dark Ring", 
@@ -533,7 +533,7 @@ function init_gear_sets()
     })
     sets.engaged.PDT.Haste_40 = set_combine(sets.engaged.Haste_40, { 
             head="Lithelimb Cap", 
-            neck="Twilight Torque", 
+            neck="Loricate Torque", 
             body="Adhemar Jacket", 
             ring1="Patricius Ring", 
             ring2="Dark Ring", 
@@ -544,7 +544,7 @@ function init_gear_sets()
 
      -- 30
     sets.engaged.Haste_30 = set_combine(sets.engaged.Haste_40, {
-        back="Canny Cape",
+        back="Toutatis's Cape",
         feet="Herculean Boots"
     })
     sets.engaged.Mid.Haste_30 = set_combine(sets.engaged.Haste_30, { 
@@ -558,7 +558,7 @@ function init_gear_sets()
     sets.engaged.Evasion.Haste_30 = set_combine(sets.engaged.Haste_30, { body="Samnuha Coat", ring1="Beeline Ring", feet="Herculean Boots"})
     sets.engaged.PDT.Haste_30 = set_combine(sets.engaged.Haste_30, { 
             head="Lithelimb Cap", 
-            neck="Twilight Torque", 
+            neck="Loricate Torque", 
             body="Adhemar Jacket", 
             ring1="Patricius Ring", 
             ring2="Dark Ring", 
@@ -580,7 +580,7 @@ function init_gear_sets()
     sets.engaged.Evasion.Haste_25 = set_combine(sets.engaged.Haste_25, { body="Samnuha Coat", ring1="Beeline Ring", feet="Herculean Boots"})
     sets.engaged.PDT.Haste_25 = set_combine(sets.engaged.Haste_25, { 
             head="Lithelimb Cap", 
-            neck="Twilight Torque", 
+            neck="Loricate Torque", 
             body="Adhemar Jacket", 
             ring1="Patricius Ring", 
             ring2="Dark Ring", 

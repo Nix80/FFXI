@@ -331,7 +331,7 @@ function get_sets()
     sets.misc.DT = {}
     sets.misc.DT.None = {}
     sets.misc.DT.Active = {"Vanir Battery",
-				head="Rawhide mask",neck="Twilight Torque", lear="Ethereal earring", rear="Etiolation Earring",
+				head="Rawhide mask",neck="Loricate Torque", lear="Ethereal earring", rear="Etiolation Earring",
 				body="Emet Harness +1",hands="Adhemar Wristbands",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 				back="Solemnity Cape",waist="Kentarch Belt +1",legs="Crimson Cuisses",feet="Herculean Boots"}
 
@@ -385,7 +385,7 @@ function get_sets()
         hands="Adhemar Wristbands",
         lring="Ramuh Ring +1",
         rring="Epona's Ring",
-        back="Rancorous Mantle",
+        back="Rosmerta's Cape",
         waist="Fotia Belt",
         legs="Samnuha Tights",
         feet="Thereoid Greaves"}
@@ -399,8 +399,8 @@ function get_sets()
         body="Adhemar Jacket",
         hands="Adhemar Wristbands",
         lring="Rajas Ring",
-        rring="Epona's Ring",
-        back="Lupine Cape",
+        rring="Rufescent Ring",
+        back="Rosmerta's Cape",
         waist="Fotia Belt",
         legs="Samnuha Tights",
         feet="Thereoid Greaves"}
@@ -418,10 +418,10 @@ function get_sets()
 			right_ear="Moonshade earring",
 			left_ring="Rufescent Ring",
 			right_ring="Epona's Ring",
-			back="Rancorous Mantle"}
+			back="Rosmerta's Cape"}
 
     sets.precast.WS['Sanguine Blade'] = {
-			ammo="Pemphredo Tathlum",
+			ammo="Ghastly Tathlum",
 			head="Carmine Mask",
 			body="Amalric Doublet",
 			hands="Amalric Gages",
@@ -448,7 +448,7 @@ function get_sets()
 			right_ear="Moonshade earring",
 			left_ring="Rufescent Ring",
 			right_ring="Epona's Ring",
-			back="Rancorous Mantle"}
+			back="Rosmerta's Cape"}
 
     sets.precast.FastCast = {
 		head="Carmine Mask",
@@ -483,7 +483,7 @@ function get_sets()
 		waist="Witful Belt",
 		left_ear="Etiolation Earring",
 		right_ear="Loquacious Earring",
-		left_ring="Renaye Ring",
+		left_ring="Etana ring",
 		right_ring="Defending Ring",
 		back="Cornflower Cape"}
 
@@ -533,33 +533,43 @@ function get_sets()
 
     sets.midcast.BlueMagic.PhysACC =
             set_combine(sets.midcast.BlueMagic.STR, {
+		head="Carmine Mask",
+		neck="Sanctity Necklace",
+		ear1="Lifestorm Earring", 
+		ear2="Psystorm Earring",
+		hands="Rawhide Gloves",
+		ring1="Weatherspoon Ring",
+		ring2="Ramuh Ring +1",
+		back="Cornflower Cape",
+		waist="Kentarch Belt +1",
+		legs="Psycloth Lappas",	
         ammo="Amar Cluster",
-		left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",
-        body="Mekosu. Harness"})
+        body="Adhemar Jacket"})
 
     sets.midcast.BlueMagic.MagicACC =
             set_combine(sets.midcast.BlueMagic.Skill, {
-        ammo="Pemphredo Tathlum",
+        ammo="Ghastly Tathlum",
 		head="Carmine Mask",
 		body="Amalric Doublet",
-		hands="Amalric Gages",
+		hands="Rawhide Gloves",
 		legs="Psycloth Lappas",
 		feet="Medium's Sabots",
 		neck="Sanctity Necklace",
 		waist="Ovate Rope",
 		rear="Lifestorm Earring", 
 		lear="Psystorm Earring",
-		left_ring="Shiva Ring",
+		left_ring="Weather. Ring",
 		right_ring="Etana ring",
 		back="Cornflower cape"})
 
     sets.midcast.BlueMagic.PhysMagicACC =
             set_combine(sets.midcast.BlueMagic.MagicACC, {
-        waist="Kentarch Belt +1"})
+        waist="Kentarch Belt +1",
+		ammo="Amar Cluster",
+		left_ring="Ramuh Ring +1"})
 
     sets.midcast.BlueMagic.Nuke = {
-        ammo="Pemphredo Tathlum",
+        ammo="Ghastly Tathlum",
 		head="Herculean Helm",
 		body="Amalric Doublet",
 		hands="Amalric Gages",
@@ -647,7 +657,7 @@ function get_sets()
 		left_ring="Petrov Ring",
 		right_ring="Epona's Ring",
 		waist="Windbuffet Belt +1",
-		back="Bleating Mantle"}
+		back="Rosmerta's Cape"}
 
     sets.TP['Multiattack']['Normal'] = {
 		ammo="Ginsen",
@@ -662,7 +672,7 @@ function get_sets()
 		left_ring="Petrov Ring",
 		right_ring="Epona's Ring",
 		waist="Windbuffet Belt +1",
-		back="Bleating Mantle"}
+		back="Rosmerta's Cape"}
 
     sets.TP['Dual Wield']['Accuracy Mid'] = {
 		ammo="Ginsen",
@@ -677,7 +687,7 @@ function get_sets()
 		left_ring="Petrov Ring",
 		right_ring="Epona's Ring",
 		waist="Windbuffet Belt +1",
-		back="Bleating Mantle"}
+		back="Rosmerta's Cape"}
 
     sets.TP['Multiattack']['Accuracy Mid'] = {
 		ammo="Ginsen",
@@ -692,7 +702,7 @@ function get_sets()
 		left_ring="Petrov Ring",
 		right_ring="Epona's Ring",
 		waist="Windbuffet Belt +1",
-		back="Bleating Mantle"}
+		back="Rosmerta's Cape"}
 
     sets.TP['Dual Wield']['Accuracy High'] = {
 		ammo="Amar Cluster",
@@ -707,7 +717,7 @@ function get_sets()
 		right_ear="Suppanomimi",
 		left_ring="Petrov Ring",
 		right_ring="Epona's Ring",
-		back="Kayapa Cape"}
+		back="Rosmerta's Cape"}
 
     sets.TP['Multiattack']['Accuracy High'] = {
 		ammo="Amar Cluster",
@@ -722,7 +732,7 @@ function get_sets()
 		right_ear="Suppanomimi",
 		left_ring="Petrov Ring",
 		right_ring="Epona's Ring",
-		back="Kayapa Cape"}
+		back="Rosmerta's Cape"}
 
     sets.idle = {
 		ammo="Ginsen",
@@ -733,7 +743,7 @@ function get_sets()
 		body="Vrikodara Jupon",
 		hands="Adhemar Wristbands",
 		ring1="Defending ring",
-		ring2="Renaye Ring",
+		ring2="Gelatinous Ring +1",
 		back="Solemnity Cape",
 		waist="Kentarch Belt +1",
 		legs="Crimson Cuisses",
@@ -1080,7 +1090,7 @@ do
 end
 
 function self_command(str)
-    -- Use an in game macro "/con gs c auto_action" to toggle bot Off and On
+    -- Use an in game macro " " to toggle bot Off and On
     if str == 'auto_action' then
         if auto_action == 'Off' then
             auto_action = 'On'
@@ -1208,206 +1218,6 @@ function gear_modes()
 end
 
 
--- Define sets and vars used by this job file.
-function init_gear_sets()
-
-    --------------------------------------
-    -- Precast sets
-    --------------------------------------
-
-    -- Precast sets to enhance JAs
-    sets.precast.JA.Bolster = {body="Bagua Tunic"}
-    sets.precast.JA['Life cycle'] = {body="Geomancy Tunic"}
-	sets.precast.JA['Full cycle'] = {head="Azimuth Hood +1"}
-    sets.precast.JA['Radial Arcana'] = {feet="Bagua sandals"}
-	
-    -- Fast cast sets for spells
-
-    sets.precast.FC = {range="Dunna",
-        head="Merlinic hood", ear1="Etiolation Earring", ear2="Loquacious Earring",
-        body="Vrikodara Jupon", ring1="Lebeche Ring", hands="Amalric gages",
-        back="Lifestream Cape",waist="Cetl Belt",legs="Geomancy Pants +1",feet="Merlinic Crackows"}
-
-    sets.precast.FC.Cure = set_combine(sets.precast.FC, {main="Tamaxchi",sub="Sors Shield",back="Pahtli Cape"})
-
-    sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {hands="Bagua mitaines"})
-
-    
-    -- Weaponskill sets
-    -- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {ammo="Amar cluster",
-        head="Merlinic hood",neck="Fotia gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
-        body="Hagondes Coat +1",hands="Amalric gages",ring1="Rajas Ring",ring2="Rufescent Ring",
-        back="Rancorous Mantle",waist="Fotia Belt",legs="Amalric slops",feet="Battlecast Gaiters"}
-
-    -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    sets.precast.WS['Flash Nova'] = {ammo="Witchstone",
-        head="Merlinic hood",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Barkarole Earring",
-        body="Amalric doublet",hands="Amalric gages",ring1="Acumen Ring",ring2="Etana ring",
-        back="Toro Cape",waist="Fotia Belt", legs="Amalric slops", feet="Merlinic Crackows"}
-
-    sets.precast.WS['Starlight'] = {ear2="Moonshade Earring"}
-
-    sets.precast.WS['Moonlight'] = {ear2="Moonshade Earring"}
-
-
-    --------------------------------------
-    -- Midcast sets
-    --------------------------------------
-
-    -- Base fast recast for spells
-    sets.midcast.FastRecast = {
-        head="Merlinic hood",ear2="Loquacious Earring",
-        body="Vrikodara Jupon",hands="Geomancy Mitaines +1",ring1="Prolix Ring",
-        back="Lifestream Cape",waist="Witful Belt",legs="Geomancy Pants +1",feet="Merlinic Crackows"}
-
-    sets.midcast.Geomancy = {main="Rubicundity", sub="Culminus", range="Dunna", 
-		head="Azimuth Hood +1", body="Bagua Tunic", hands="Geomancy Mitaines +1", lear="Mendi. Earring", rear="Gifted earring", 
-		neck="Incanter's torque", rring="Renaye Ring", feet="Medium's sabots", back="Lifestream Cape"}
-    sets.midcast.Geomancy.Indi = {main="Rubicundity", sub="Culminus", range="Dunna", 
-		head="Azimuth Hood +1", body="Bagua Tunic", lear="Mendi. Earring", rear="Gifted earring", neck="Incanter's torque",
-		legs="Bagua Pants", hands="Geomancy Mitaines +1", feet="Medium's sabots", back="Lifestream Cape"}
-
-    sets.midcast.Cure = {main="Tamaxchi",sub="Sors Shield", lear="Novia Earring", rear="Mendicant's Earring",
-        head="Merlinic hood", body="Vrikodara Jupon",hands="Telchine Gloves", lring="Sirona's ring", rring="Lebeche ring",
-        waist="Ovate Rope", back="Solemnity Cape", legs="Assiduity Pants +1",feet="Medium's sabots"}
-    
-    sets.midcast.Curaga = sets.midcast.Cure
-
-    sets.midcast.Protectra = {ring1="Sheltered Ring"}
-
-    sets.midcast.Shellra = {ring1="Sheltered Ring"}
-
-    sets.midcast['Enhancing Magic'] = {
-        head="Befouled Crown", neck="Incanter's torque", ear1="Etiolation Earring", ear2="Loquacious Earring",
-        body="Telchine Chasuble",hands="Amalric gages", lring="Etana ring", rring="Leviathan ring",
-        back="Merciful Cape",waist="Refoccilation Stone",legs="Assiduity Pants +1", feet="Azimuth Gaiters +1"}
-
-    sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash", neck="Stone gorget"})
-    
-    sets.midcast['Enfeebling Magic'] = {main="Rubicundity", sub="Culminus", range="Dunna",
-				head="Befouled Crown", neck="Sanctity Necklace", rear="Lifestorm Earring", lear="Psystorm Earring",
-                body="Vanya Robe", hands="Amalric gages", lring="Etana ring", rring="Leviathan ring",
-                back="Lifestream Cape", waist="Ovate Rope", legs="Psycloth Lappas", feet="Bagua Sandals"}
-    
-    sets.midcast['Elemental Magic'] = {main="Rubicundity", sub="Culminus", ammo="Witchstone",
-				head="Merlinic hood", neck="Sanctity Necklace", lear="Barkarole Earring", rear="Friomisi Earring",
-                body="Amalric doublet", hands="Amalric gages", lring="Acumen Ring", rring="Shiva Ring",
-                back="Toro Cape", waist="Refoccilation Stone", legs="Amalric slops", feet="Merlinic Crackows"}
-        
-    sets.midcast.Impact = set_combine(sets.midcast['Elemental Magic'], {head=empty,body="Twilight Cloak"})
-
-    sets.midcast['Dark Magic'] = {main="Rubicundity", sub="Culminus", range="Dunna",
-				head="Bagua Galero", neck="Incanter's torque", rear="Lifestorm Earring", lear="Psystorm Earring",
-                body="Geomancy Tunic", hands="Amalric gages", lring="Acumen Ring", rring="Etana ring",
-                back="Lifestream Cape", waist="Cetl Belt", legs="Amalric slops", feet="Merlinic Crackows"}
-
-    sets.magic_burst = {main="Rubicundity", sub="Culminus", ammo="Witchstone",
-				head="Merlinic hood", neck="Mizu. Kubikazari", lear="Barkarole Earring", rear="Friomisi Earring",
-                body="Amalric doublet", hands="Amalric gages", lring="Mujin Band", rring="Locus ring",
-                back="Seshaw cape", waist="Refoccilation Stone", legs="Amalric slops", feet="Merlinic Crackows"}
-	
-				
-	sets.obi = {
-		Fire = {waist="Karin Obi"},
-		Earth = {waist="Dorin Obi"},
-		Water = {waist="Suirin Obi"},
-		Wind = {waist="Furin Obi"},
-		Ice = {waist="Hyorin Obi"},
-		Lightning = {waist="Rairin Obi"},
-		Light = {waist="Korin Obi"},
-		Dark = {waist="Anrin Obi"},
-		}				
-				
-    --------------------------------------
-    -- Idle/resting/defense/etc sets
-    --------------------------------------
-
-    -- Resting sets
-    sets.resting = {main="Pluto's Staff", range="Dunna",
-				head="Azimuth Hood +1", neck="Sanctity Necklace", rear="Etiolation Earring", lear="Ethereal Earring",
-                body="Amalric doublet", hands="Bagua Mitaines", lring="Paguroidea Ring", rring="Renaye Ring",
-                back="Toro Cape", waist="Refoccilation Stone", legs="Assiduity Pants +1", feet="Azimuth Gaiters +1"}
-
-
-    -- Idle sets
-
-    sets.idle = {main="Rubicundity", sub="Culminus", range="Dunna",
-        head="Befouled Crown", neck="Sanctity Necklace", rear="Etiolation Earring", lear="Ethereal Earring",
-        body="Vrikodara Jupon",hands="Bagua Mitaines", lring="Defending Ring", rring="Renaye Ring",
-        back="Solemnity Cape",waist="Refoccilation Stone",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
-
-    sets.idle.PDT = {main="Rubicundity", sub="Culminus",
-        head="Befouled Crown",neck="Sanctity Necklace",ear1="Etiolation Earring",ear2="Ethereal Earring",
-        body="Hagondes Coat +1",hands="Bagua Mitaines", lring="Defending Ring", rring="Gelatinous Ring +1",
-        back="Solemnity Cape",waist="Goading Belt",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
-
-    -- .Pet sets are for when Luopan is present.
-	sets.idle.Pet = {main="Rubicundity", sub="Culminus", range="Dunna",
-        head="Azimuth Hood +1",neck="Sanctity Necklace", rear="Handler's Earring +1", lear="Etiolation Earring",
-        body="Amalric doublet",hands="Geomancy Mitaines +1",ring1="Defending Ring", rring="Renaye Ring",
-        back="Lifestream Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Azimuth Gaiters +1"}
-   
-    sets.idle.PDT.Pet = {main="Earth Staff", sub="Volos Strap", range="Dunna",
-        head="Azimuth Hood +1",neck="Twilight torque",ear1="Handler's Earring +1",ear2="Etiolation Earring",
-        body="Hagondes Coat +1",hands="Geomancy Mitaines +1", lring="Defending Ring", rring="Gelatinous Ring +1",
-        back="Lifestream Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Azimuth Gaiters +1"}
-
-    -- .Indi sets are for when an Indi-spell is active.
-    --sets.idle.Indi = set_combine(sets.idle, {legs="Bagua Pants"})
-    --sets.idle.Pet.Indi = set_combine(sets.idle.Pet, {legs="Bagua Pants"})
-    --sets.idle.PDT.Indi = set_combine(sets.idle.PDT, {legs="Bagua Pants"})
-    --sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {legs="Bagua Pants"})
-
-    sets.idle.Town = {main="Rubicundity", sub="Culminus", range="Dunna",
-        head="Befouled Crown",neck="Sanctity Necklace",rear="Etiolation Earring", lear="Handler's Earring +1",
-        body="Amalric doublet",hands="Bagua Mitaines", lring="Defending Ring", rring="Renaye Ring",
-        back="Lifestream Cape",waist="Refoccilation Stone",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
-
-    sets.idle.Weak = {main="Rubicundity", sub="Culminus", 
-        head="Befouled Crown",neck="Sanctity Necklace",rear="Etiolation Earring", lear="Barkarole Earring",
-        body="Amalric doublet",hands="Amalric gages", lring="Defending Ring", rring="Renaye Ring",
-        back="Lifestream Cape",waist="Slipor sash",legs="Amalric slops",feet="Azimuth Gaiters +1"}
-
-    -- Defense sets
-
-    sets.defense.PDT = {main="Earth Staff", sub="Volos Strap", range="Dunna",
-        head="Befouled Crown",neck="Twilight torque",ear1="Handler's Earring +1", ear2="Etiolation Earring",
-        body="Hagondes Coat +1",hands="Geomancy Mitaines +1", lring="Defending Ring", rring="Gelatinous Ring +1",
-        back="Solemnity Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Azimuth Gaiters +1"}
-
-    sets.defense.MDT = {main="Earth Staff", sub="Volos Strap", range="Dunna",
-        head="Befouled Crown",neck="Twilight torque",ear1="Handler's Earring +1",ear2="Etiolation Earring",
-        body="Hagondes Coat +1",hands="Geomancy Mitaines +1", lring="Defending Ring", rring="Renaye Ring",
-        back="Solemnity Cape",waist="Slipor sash",legs="Assiduity Pants +1",feet="Azimuth Gaiters +1"}
-
-    sets.Kiting = {feet="Herald's Gaiters"}
-
-    sets.latent_refresh = {waist="Fucho-no-obi"}
-
-
-    --------------------------------------
-    -- Engaged sets
-    --------------------------------------
-
-    -- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous
-    -- sets if more refined versions aren't defined.
-    -- If you create a set with both offense and defense modes, the offense mode should be first.
-    -- EG: sets.engaged.Dagger.Accuracy.Evasion
-
-    -- Normal melee group
-    sets.engaged = {main="Rubicundity", sub="Culminus", ammo="Amar cluster",
-        head="Merlinic hood",neck="Sanctity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Hagondes Coat +1",hands="Amalric gages",ring1="Rajas Ring",ring2="Mars's Ring",
-        back="Kayapa Cape",waist="Windbuffet Belt +1",legs="Amalric slops",feet="Battlecast Gaiters"}
-
-    --------------------------------------
-    -- Custom buff sets
-    --------------------------------------
-
-end
-
-
 function relaxed_play_mode()
     -- This can be used as a mini bot to automate actions
     if not midaction() then
@@ -1415,12 +1225,6 @@ function relaxed_play_mode()
                 and not check_buffs('silence', 'mute')
                 and check_recasts(s('Magic Fruit')) then
             windower.send_command('Magic Fruit')
-
-        elseif player.target.hpp < 40
-                and player.target.hpp > 15
-                and not check_buffs('silence', 'mute')
-                and player.target.distance < 5 then
-            windower.send_command('input /ma "sinker drill" <t>')
 
         elseif not check_buffs('Haste')
                 and not check_buffs('silence', 'mute')
@@ -1432,19 +1236,19 @@ function relaxed_play_mode()
                 and check_recasts(s('Nat. Meditation')) then
             windower.send_command('nat. meditation')
 
-        elseif player.equipment.main == 'Tizona'
-                and not check_buffs('Aftermath: Lv.3')
-                and player.tp < 3000 then
-            return
+--        elseif player.equipment.main == 'Tizona'
+--                and not check_buffs('Aftermath: Lv.3')
+--                and player.tp < 3000 then
+--            return
 
-        elseif player.equipment.main == 'Tizona'
-                and not check_buffs('Aftermath: Lv.3')
-                and player.target.hpp > 40
-                and player.tp == 3000 then
-            windower.send_command('expiacion')
+--        elseif player.equipment.main == 'Tizona'
+--                and not check_buffs('Aftermath: Lv.3')
+--                and player.target.hpp > 40
+--                and player.tp == 3000 then
+--            windower.send_command('expiacion')
 
         elseif player.tp > 999
-                and player.target.hpp > 40
+--                and player.target.hpp > 40
                 and player.target.distance < 5 then
             windower.send_command('chant du cygne')
         end
